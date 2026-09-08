@@ -6,7 +6,7 @@
   "application": {
     "package": "com.wuge.xiaowu",
     "known_compatible_versions": [
-      "0.2.0"
+      "0.2.1"
     ],
     "minimum_android_api": 30,
     "abis": [
@@ -23,7 +23,7 @@
       "kind": "speech_recognition",
       "version": "paraformer-v1",
       "model": "sherpa-onnx-streaming-paraformer-bilingual-zh-en",
-      "archive": "Xiaowu-asr-paraformer-v1.zip",
+      "archive": "JARVIS-asr-paraformer-v1.zip",
       "bytes": 218651054,
       "sha256": "f5787d2989113ca892a2c719cb7bb1b3a4c0d256843454ecb59ec7cbf72231a5",
       "payload_bytes": 237202501,
@@ -56,14 +56,14 @@
     },
     {
       "id": "kws",
-      "title": "小五同学语音唤醒",
+      "title": "JARVIS 中文唤醒",
       "kind": "keyword_spotting",
       "version": "zh-int8-v1",
       "model": "sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01",
-      "archive": "Xiaowu-wake-zh-int8-v1.zip",
-      "bytes": 3698020,
-      "sha256": "1a99daf0fa01afec72e834041850615a29f09c02307f18ba3a64f4ef246d4e0d",
-      "payload_bytes": 5025682,
+      "archive": "JARVIS-wake-zh-int8-v1.zip",
+      "bytes": 3698001,
+      "sha256": "b9348d7c13b604be274c0584196500fa8cda9d91546394bb4f2aac9204259042",
+      "payload_bytes": 5025632,
       "download_url": "",
       "runtime": {
         "name": "sherpa-onnx",
@@ -91,8 +91,8 @@
         },
         {
           "path": "kws/keywords.txt",
-          "bytes": 78,
-          "sha256": "e11510bebbfaaa5149bc39ec2a14aa3a71629625151c2e78abb1ce45d65b7d5d"
+          "bytes": 28,
+          "sha256": "2e3fb9e42eaba7a10251ca8e77d668800399e6be24d466bdfd631a9e3db299a4"
         },
         {
           "path": "kws/tokens.txt",
@@ -100,7 +100,7 @@
           "sha256": "72316508d9119696145abc6f1f8cdc46287535c34e5ce7e595f845cb1499cf2e"
         }
       ],
-      "keyword": "小五同学"
+      "keyword": "贾维斯"
     }
   ]
 }

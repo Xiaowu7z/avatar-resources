@@ -100,8 +100,8 @@ def validate(data, allow_template=False, archives=None):
     require(data.get("catalog_schema_version") == 1, "不支持的目录 schema 版本")
     require(data.get("resource_pack_format_version") == 1, "不支持的资源包格式版本")
     require(data.get("application", {}).get("package") == "com.wuge.xiaowu", "App 包名不符")
-    require(data["application"].get("known_compatible_versions") == ["0.2.0"],
-            "此模板只记录已适配的 App 0.2.0，其他版本需重新审阅兼容性")
+    require(data["application"].get("known_compatible_versions") == ["0.2.1"],
+            "此模板只记录已适配的 App 0.2.1，其他版本需重新审阅兼容性")
     repository, tag = data.get("repository_url"), data.get("release_tag")
     blank = repository == "" and tag == ""
     require(not blank or allow_template, "目录尚未配置真实仓库和固定 Release 标签")

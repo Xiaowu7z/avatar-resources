@@ -1,7 +1,7 @@
-小五同学 0.2.0 的离线识别与唤醒资源，固定版本 `models-v1`。
+JARVIS 0.2.1 的离线识别与唤醒资源，固定版本 `models-v1`。
 
-- `Xiaowu-asr-paraformer-v1.zip`：普通话流式识别资源。
-- `Xiaowu-wake-zh-int8-v1.zip`：中文唤醒模型，默认关键词“小五同学”。
+- `JARVIS-asr-paraformer-v1.zip`：普通话流式识别资源。
+- `JARVIS-wake-zh-int8-v1.zip`：中文唤醒模型，默认关键词“贾维斯”。
 - `catalog-v1.json`：固定下载地址、字节数、SHA-256 与内部文件清单。
 - `resource-packs-v1.json`：归档 SHA-256 快照。
 - `resource-packs-LICENSE.txt`：模型来源与 Apache-2.0 许可。

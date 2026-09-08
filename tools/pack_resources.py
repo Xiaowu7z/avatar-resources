@@ -69,8 +69,8 @@ def main():
     assets = args.project / "app/src/main/assets"
     result = {"format_version": 1, "packs": []}
     for definition in [
-        ("asr", "asr/paraformer", "paraformer-v1", "Xiaowu-asr-paraformer-v1.zip"),
-        ("kws", "kws", "zh-int8-v1", "Xiaowu-wake-zh-int8-v1.zip"),
+        ("asr", "asr/paraformer", "paraformer-v1", "JARVIS-asr-paraformer-v1.zip"),
+        ("kws", "kws", "zh-int8-v1", "JARVIS-wake-zh-int8-v1.zip"),
     ]:
         pack = create_pack(assets, args.output, *definition)
         result["packs"].append(pack)
@@ -78,12 +78,12 @@ def main():
     (args.output / "resource-packs-v1.json").write_text(json.dumps(result, indent=2) + "\n")
     license_text = (assets / "licenses/Apache-2.0.txt").read_text()
     (args.output / "resource-packs-LICENSE.txt").write_text(
-        "Xiaowu resource data packs\n\n"
+        "JARVIS resource data packs\n\n"
         "ASR: sherpa-onnx-streaming-paraformer-bilingual-zh-en, unmodified INT8 weights.\n"
         "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-paraformer-bilingual-zh-en\n"
         "KWS: sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01, unmodified INT8 weights.\n"
         "https://github.com/k2-fsa/sherpa-onnx/releases/tag/kws-models\n"
-        "The local KWS keyword data selects the phrase Xiao Wu Tong Xue (小五同学).\n"
+        "The local KWS keyword data selects the phrase Jia Wei Si (贾维斯).\n"
         "Model licenses: Apache-2.0. Distribute this notice with both resource ZIP files.\n\n"
         + license_text)
 

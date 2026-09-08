@@ -1,10 +1,10 @@
-Xiaowu resource data packs
+JARVIS resource data packs
 
 ASR: sherpa-onnx-streaming-paraformer-bilingual-zh-en, unmodified INT8 weights.
 https://huggingface.co/csukuangfj/sherpa-onnx-streaming-paraformer-bilingual-zh-en
 KWS: sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01, unmodified INT8 weights.
 https://github.com/k2-fsa/sherpa-onnx/releases/tag/kws-models
-The local KWS keyword data selects the phrase Xiao Wu Tong Xue (小五同学).
+The local KWS keyword data selects the phrase Jia Wei Si (贾维斯).
 Model licenses: Apache-2.0. Distribute this notice with both resource ZIP files.
 
 

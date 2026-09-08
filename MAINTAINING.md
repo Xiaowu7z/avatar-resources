@@ -12,7 +12,7 @@
 ## 当前两个版本的边界
 
 - `asr/paraformer/manifest.json` 在 APK 中约束 Paraformer 的编码器、解码器与 tokens 文件。
-- `kws/manifest.json` 在 APK 中约束 Zipformer 唤醒文件与“小五同学”关键词文件。
+- `kws/manifest.json` 在 APK 中约束 Zipformer 唤醒文件与“贾维斯”关键词文件。
 - `manifests/` 是这些可信清单的配套副本；发布者不能只改目录字段便要求旧 APK 接受其他权重。
 - 同一推理引擎版本不等于模型相互兼容。增加模型还可能需要新的前处理、采样率、tokens、解码器、CPU/内存策略或 JNI 接口。
 - TTS 当前使用 Android 已安装引擎列表。微软在线语音需要单独实现授权配置与联网合成；微软离线模型需要合法取得对应授权。这里不声明存在任何未提供的声音包。

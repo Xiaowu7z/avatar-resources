@@ -17,11 +17,11 @@ permissions:
 
 concurrency:
   group: publish-models-v1
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   publish:
-    if: ${{ false }} # Publication paused for JARVIS resource update
+    if: github.repository == 'Xiaowu7z/avatar-resources' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     permissions:

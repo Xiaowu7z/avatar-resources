@@ -5,9 +5,9 @@
 | 资源 | 上游身份 | 许可 |
 | --- | --- | --- |
 | 普通话流式识别 | `sherpa-onnx-streaming-paraformer-bilingual-zh-en` | Apache-2.0 |
-| “小五同学”唤醒 | `sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01`，INT8 | Apache-2.0 |
+| “JARVIS”唤醒 | `sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01`，INT8 | Apache-2.0 |
 
-识别资源使用上游的 `encoder.int8.onnx`、`decoder.int8.onnx` 与 `tokens.txt`，未修改模型权重。唤醒资源使用上游 INT8 权重和 tokens，并配套本地关键词文件选择“小五同学”。
+识别资源使用上游的 `encoder.int8.onnx`、`decoder.int8.onnx` 与 `tokens.txt`，未修改模型权重。唤醒资源使用上游 INT8 权重和 tokens，并配套本地关键词文件选择“贾维斯”。
 
 归档许可说明与 Apache-2.0 全文保存于 [licenses/resource-packs-LICENSE.txt](licenses/resource-packs-LICENSE.txt)。上游模型卡的交付时副本分别保存在 `licenses/paraformer-model-card.md`、`licenses/kws-model-card.md`。
 

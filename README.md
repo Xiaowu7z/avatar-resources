@@ -1,6 +1,6 @@
-# avatar-resources · 小五同学资源仓库
+# avatar-resources · JARVIS资源仓库
 
-用于保存小五的资源目录、版本清单、许可和维护说明。大型模型 ZIP 放在 **GitHub Releases**，主分支不存模型权重。小 APK 保留应用逻辑、运行时和可信文件清单；资源下载或导入一次后留在手机，覆盖更新 APK 可继续复用。
+用于保存JARVIS的资源目录、版本清单、许可和维护说明。大型模型 ZIP 放在 **GitHub Releases**，主分支不存模型权重。小 APK 保留应用逻辑、运行时和可信文件清单；资源下载或导入一次后留在手机，覆盖更新 APK 可继续复用。
 
 实际仓库：[Xiaowu7z/avatar-resources](https://github.com/Xiaowu7z/avatar-resources)。资源使用固定 Release 标签 `models-v1`；下载地址和哈希见 [catalog-v1.json](catalog-v1.json)。首次发布由 Actions 校验后完成；以 [Release 页面](https://github.com/Xiaowu7z/avatar-resources/releases/tag/models-v1) 的实际资产为准。
 
@@ -8,17 +8,17 @@
 
 | 资源 | 用途 | ZIP 字节数 | 解压后字节数 | 资源版本 |
 | --- | --- | ---: | ---: | --- |
-| `Xiaowu-asr-paraformer-v1.zip` | 普通话流式识别 | 218651054 | 237202501 | `paraformer-v1` |
-| `Xiaowu-wake-zh-int8-v1.zip` | “小五同学”本地唤醒 | 3698020 | 5025682 | `zh-int8-v1` |
+| `JARVIS-asr-paraformer-v1.zip` | 普通话流式识别 | 218651054 | 237202501 | `paraformer-v1` |
+| `JARVIS-wake-zh-int8-v1.zip` | “JARVIS”本地唤醒 | 3698001 | 5025632 | `zh-int8-v1` |
 
-两包都是现有文件的真实清单，归档与内部文件 SHA-256 保存在模板和 `manifests/` 中。识别模型也具备英语能力，小五当前交互范围以普通话为主。当前配套运行时为 `sherpa-onnx 1.13.7`，App 为 `com.wuge.xiaowu 0.2.0`，Android 11/API 30 及以上、ARM64；这里描述配套代码的兼容目标，并不表示已经完成所有真机验证。
+两包都是现有文件的真实清单，归档与内部文件 SHA-256 保存在模板和 `manifests/` 中。识别模型也具备英语能力，JARVIS当前交互范围以普通话为主。当前配套运行时为 `sherpa-onnx 1.13.7`，App 为 `com.wuge.xiaowu 0.2.1`，Android 11/API 30 及以上、ARM64；这里描述配套代码的兼容目标，并不表示已经完成所有真机验证。
 
-**目前没有独立 TTS 声音包。** 小五的播报音色来自手机已经安装的离线语音引擎。仓库不包含微软语音权重，也没有“贾维斯原声”权重；沉稳效果目前通过用户试听选音色、调整语速和音调实现。
+**目前没有独立 TTS 声音包。** JARVIS的播报音色来自手机已经安装的离线语音引擎。仓库不包含微软语音权重，也没有“贾维斯原声”权重；沉稳效果目前通过用户试听选音色、调整语速和音调实现。
 
 ## 下载和可复现发布
 
-- [普通话识别资源 ZIP](https://github.com/Xiaowu7z/avatar-resources/releases/download/models-v1/Xiaowu-asr-paraformer-v1.zip)
-- [中文唤醒资源 ZIP](https://github.com/Xiaowu7z/avatar-resources/releases/download/models-v1/Xiaowu-wake-zh-int8-v1.zip)
+- [普通话识别资源 ZIP](https://github.com/Xiaowu7z/avatar-resources/releases/download/models-v1/JARVIS-asr-paraformer-v1.zip)
+- [中文唤醒资源 ZIP](https://github.com/Xiaowu7z/avatar-resources/releases/download/models-v1/JARVIS-wake-zh-int8-v1.zip)
 - [目录快照](https://github.com/Xiaowu7z/avatar-resources/releases/download/models-v1/catalog-v1.json)
 - [来源与许可](https://github.com/Xiaowu7z/avatar-resources/releases/download/models-v1/resource-packs-LICENSE.txt)
 
@@ -45,7 +45,7 @@ App 对解压路径、文件大小、完整性和 SHA-256 进行检查，信任�
 
 未来增加其他识别模型、唤醒模型或自带 TTS 声音时，需要先实现对应运行时、文件结构、配置和兼容验证，再发布新的资源及 App 清单。不能把任意 ONNX/GGUF/语音权重放进 Releases 就让当前 App 自动使用。
 
-自定义中文唤醒词的配置与拼音数据由配套 APK 处理，当前两份资源 ZIP 保持原样。KWS 包中的默认关键词仍为“小五同学”，不要为了改唤醒词而修改本资源包的固定文件和哈希。
+自定义中文唤醒词的配置与拼音数据由配套 APK 处理，当前两份资源 ZIP 保持原样。KWS 包中的默认关键词仍为“贾维斯”，不要为了改唤醒词而修改本资源包的固定文件和哈希。
 
 ## 版本与维护
 

@@ -4,7 +4,7 @@
   "license": "Apache-2.0",
   "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/kws-models/sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01.tar.bz2",
   "source_archive_sha256": "b2f7c89690dc8ce4c6ed6afeab7cd800c36ad1421fb6b6302b4a4b194cf7f35f",
-  "keywords": "小五同学",
+  "keywords": "贾维斯",
   "sample_rate": 16000,
   "files": [
     {
@@ -24,8 +24,8 @@
     },
     {
       "name": "keywords.txt",
-      "bytes": 78,
-      "sha256": "e11510bebbfaaa5149bc39ec2a14aa3a71629625151c2e78abb1ce45d65b7d5d"
+      "bytes": 28,
+      "sha256": "2e3fb9e42eaba7a10251ca8e77d668800399e6be24d466bdfd631a9e3db299a4"
     },
     {
       "name": "tokens.txt",

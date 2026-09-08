@@ -31,7 +31,7 @@ def download(url, target, expected_hash, expected_bytes=None, limit=320 * 1024 *
     temporary = target.with_suffix(target.suffix + '.part')
     for attempt in range(1, 4):
         try:
-            request = urllib.request.Request(url, headers={'User-Agent': 'Xiaowu-resource-builder/1'})
+            request = urllib.request.Request(url, headers={'User-Agent': 'JARVIS-resource-builder/1'})
             with urllib.request.urlopen(request, timeout=90) as response, temporary.open('wb') as output:
                 size = 0
                 while True:
