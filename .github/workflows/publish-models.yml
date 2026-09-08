@@ -1,0 +1,39 @@
+name: Reproduce and publish models-v1
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-models.yml'
+      - 'tools/**'
+      - 'manifests/**'
+      - 'catalog-v1.json'
+      - 'licenses/**'
+      - 'resources/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-models-v1
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.repository == 'Xiaowu7z/avatar-resources' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout exact build commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Download official models and reproduce verified resource ZIPs
+        run: /usr/bin/python3 tools/build_resources.py
+      - name: Publish complete draft then make it public
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: /usr/bin/python3 tools/publish_release.py

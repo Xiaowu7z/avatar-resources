@@ -1,0 +1,17 @@
+{
+  "asr": {
+    "repository": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-paraformer-bilingual-zh-en",
+    "revision": "8e40c43232a1c5c66c82111efc5820d3accca11b"
+  },
+  "kws": {
+    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/kws-models/sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01.tar.bz2",
+    "sha256": "b2f7c89690dc8ce4c6ed6afeab7cd800c36ad1421fb6b6302b4a4b194cf7f35f",
+    "prefix": "sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01",
+    "members": {
+      "decoder.int8.onnx": "decoder-epoch-12-avg-2-chunk-16-left-64.int8.onnx",
+      "encoder.int8.onnx": "encoder-epoch-12-avg-2-chunk-16-left-64.int8.onnx",
+      "joiner.int8.onnx": "joiner-epoch-12-avg-2-chunk-16-left-64.int8.onnx",
+      "tokens.txt": "tokens.txt"
+    }
+  }
+}

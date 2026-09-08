@@ -1,0 +1,21 @@
+{
+  "format_version": 1,
+  "packs": [
+    {
+      "id": "asr",
+      "version": "paraformer-v1",
+      "archive": "Xiaowu-asr-paraformer-v1.zip",
+      "bytes": 218651054,
+      "sha256": "f5787d2989113ca892a2c719cb7bb1b3a4c0d256843454ecb59ec7cbf72231a5",
+      "payload_bytes": 237202501
+    },
+    {
+      "id": "kws",
+      "version": "zh-int8-v1",
+      "archive": "Xiaowu-wake-zh-int8-v1.zip",
+      "bytes": 3698020,
+      "sha256": "1a99daf0fa01afec72e834041850615a29f09c02307f18ba3a64f4ef246d4e0d",
+      "payload_bytes": 5025682
+    }
+  ]
+}

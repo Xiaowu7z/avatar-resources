@@ -1,0 +1,36 @@
+{
+  "id": "sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01",
+  "variant": "epoch-12-avg-2-chunk-16-left-64-int8",
+  "license": "Apache-2.0",
+  "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/kws-models/sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01.tar.bz2",
+  "source_archive_sha256": "b2f7c89690dc8ce4c6ed6afeab7cd800c36ad1421fb6b6302b4a4b194cf7f35f",
+  "keywords": "小五同学",
+  "sample_rate": 16000,
+  "files": [
+    {
+      "name": "decoder.int8.onnx",
+      "bytes": 181069,
+      "sha256": "ed83454004d5bd16d831eaf00adcd181ed7734886aab6ef440f3ffa5aa3cfe3b"
+    },
+    {
+      "name": "encoder.int8.onnx",
+      "bytes": 4777666,
+      "sha256": "dd784973fc9d2fabb3b800d6dcd20fc3b0ca84f8e2415afe54b032878e447f4d"
+    },
+    {
+      "name": "joiner.int8.onnx",
+      "bytes": 65242,
+      "sha256": "f79760052b87239e325f0567c752ad3130b30d92effb847d4307743c20c59a24"
+    },
+    {
+      "name": "keywords.txt",
+      "bytes": 78,
+      "sha256": "e11510bebbfaaa5149bc39ec2a14aa3a71629625151c2e78abb1ce45d65b7d5d"
+    },
+    {
+      "name": "tokens.txt",
+      "bytes": 1627,
+      "sha256": "72316508d9119696145abc6f1f8cdc46287535c34e5ce7e595f845cb1499cf2e"
+    }
+  ]
+}
