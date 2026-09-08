@@ -2,7 +2,7 @@
 
 用于保存JARVIS的资源目录、版本清单、许可和维护说明。大型模型 ZIP 放在 **GitHub Releases**，主分支不存模型权重。小 APK 保留应用逻辑、运行时和可信文件清单；资源下载或导入一次后留在手机，覆盖更新 APK 可继续复用。
 
-实际仓库：[Xiaowu7z/avatar-resources](https://github.com/Xiaowu7z/avatar-resources)。资源使用固定 Release 标签 `models-v1`；下载地址和哈希见 [catalog-v1.json](catalog-v1.json)。首次发布由 Actions 校验后完成；以 [Release 页面](https://github.com/Xiaowu7z/avatar-resources/releases/tag/models-v1) 的实际资产为准。
+实际仓库：[Xiaowu7z/avatar-resources](https://github.com/Xiaowu7z/avatar-resources)。资源使用固定 Release 标签 `models-v1`；下载地址和哈希见 [catalog-v1.json](catalog-v1.json)。**models-v1 已发布。** [Release 页面](https://github.com/Xiaowu7z/avatar-resources/releases/tag/models-v1) 已提供两份 ZIP、许可和目录快照。构建提交为 [`aa752baa5b84`](https://github.com/Xiaowu7z/avatar-resources/commit/aa752baa5b84aba05b3ee10db98b957f1f1894c2)，[发布工作流](https://github.com/Xiaowu7z/avatar-resources/actions/runs/34218405579) 全部步骤通过。
 
 ## 已有资源
 
@@ -22,7 +22,7 @@
 - [目录快照](https://github.com/Xiaowu7z/avatar-resources/releases/download/models-v1/catalog-v1.json)
 - [来源与许可](https://github.com/Xiaowu7z/avatar-resources/releases/download/models-v1/resource-packs-LICENSE.txt)
 
-首次提交会触发 `Reproduce and publish models-v1` 工作流。它从固定 Hugging Face 提交下载 ASR 文件，从官方固定 URL 下载 KWS 归档，先验证源文件，再以固定路径、时间戳和 Unix 文件属性生成 ZIP。完整 ZIP 的大小、SHA-256 和每个内部文件必须与现有清单完全一致，才能上传为草稿并公开。
+`Reproduce and publish models-v1` 工作流已完成首次发布。它从固定 Hugging Face 提交下载 ASR 文件，从官方固定 URL 下载 KWS 归档，先验证源文件，再以固定路径、时间戳和 Unix 文件属性生成 ZIP。完整 ZIP 的大小、SHA-256 和每个内部文件必须与现有清单完全一致，才能上传为草稿并公开。
 
 本地可复现，不需要任何 API 密钥：
 
