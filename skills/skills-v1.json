@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "revision": 1,
+  "min_app_version": 17,
+  "skills": [
+    {
+      "id": "quiet_music",
+      "title": "轻声听歌",
+      "examples": [
+        "轻声听歌",
+        "进入轻声听歌模式",
+        "我想轻声听歌"
+      ],
+      "steps": [
+        {
+          "tool": "control_volume",
+          "arguments": {
+            "action": "set",
+            "percent": 20
+          }
+        },
+        {
+          "tool": "control_kugou",
+          "arguments": {
+            "action": "play"
+          }
+        }
+      ]
+    },
+    {
+      "id": "volume_down",
+      "title": "小声一点",
+      "examples": [
+        "声音轻一点",
+        "给我小点声"
+      ],
+      "steps": [
+        {
+          "tool": "control_volume",
+          "arguments": {
+            "action": "down"
+          }
+        }
+      ]
+    },
+    {
+      "id": "volume_up",
+      "title": "大声一点",
+      "examples": [
+        "声音响一点",
+        "给我大点声"
+      ],
+      "steps": [
+        {
+          "tool": "control_volume",
+          "arguments": {
+            "action": "up"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wechat_scan",
+      "title": "微信扫一扫",
+      "examples": [
+        "我要用微信扫个码",
+        "用微信扫一下二维码"
+      ],
+      "steps": [
+        {
+          "tool": "open_wechat_scan",
+          "arguments": {}
+        }
+      ]
+    },
+    {
+      "id": "alipay_scan",
+      "title": "支付宝扫一扫",
+      "examples": [
+        "我要用支付宝扫个码",
+        "用支付宝扫一下二维码"
+      ],
+      "steps": [
+        {
+          "tool": "open_alipay_scan",
+          "arguments": {}
+        }
+      ]
+    }
+  ]
+}
